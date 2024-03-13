@@ -37,7 +37,7 @@
 
         </ProgressBar>
     </FrameLayout>
-    <!-- TextView to display the stopwatch time -->
+
     <TextView
         android:id="@+id/textStopwatch"
         android:layout_width="wrap_content"
@@ -54,22 +54,20 @@
         android:layout_below="@id/frame"
         android:orientation="horizontal">
 
-        <!-- Stop ImageButton -->
         <ImageButton
             android:id="@+id/stop"
             android:layout_width="0dp"
-            android:layout_height="110dp"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="5dp"
             android:layout_weight="1"
-            android:src="@drawable/pause"
             android:background="@drawable/button_background"
             android:contentDescription="@string/Stop"
-            android:layout_marginEnd="5dp"/>
+            android:src="@drawable/pause" />
 
-        <!-- Start ImageButton -->
         <ImageButton
             android:id="@+id/start"
             android:layout_width="0dp"
-            android:layout_height="110dp"
+            android:layout_height="match_parent"
             android:layout_weight="1"
             android:src="@drawable/play"
             android:background="@drawable/button_background"
@@ -77,7 +75,6 @@
             android:layout_marginStart="5dp"
             android:layout_marginEnd="5dp"/>
 
-        <!-- Reset ImageButton -->
         <ImageButton
             android:id="@+id/reset"
             android:layout_width="0dp"

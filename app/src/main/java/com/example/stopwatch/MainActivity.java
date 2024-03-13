@@ -32,7 +32,6 @@ public class MainActivity extends AppCompatActivity {
 
             textView.setText(MessageFormat.format("{0}:{1}:{2}", minutes, String.format(Locale.getDefault(), "%02d", seconds), String.format(Locale.getDefault(), "%02d", milliSeconds)));
 
-            // Update the progress of the progress bar based on the elapsed time
             progressBar.setProgress((int) updateTime);
 
             handler.postDelayed(this, 0);
@@ -60,9 +59,7 @@ public class MainActivity extends AppCompatActivity {
                 reset.setVisibility(View.INVISIBLE);
                 stop.setVisibility(View.VISIBLE);
                 start.setVisibility(View.INVISIBLE);
-
-                // Set the maximum progress of the progress bar based on the total duration of the stopwatch (60 seconds)
-                progressBar.setMax(60000); // 60 seconds in milliseconds
+                progressBar.setMax(60000);
             }
         });
 
@@ -89,8 +86,6 @@ public class MainActivity extends AppCompatActivity {
                 milliSeconds = 0;
                 textView.setText("00:00:00");
                 reset.setVisibility(View.INVISIBLE);
-
-                // Reset the progress of the progress bar
                 progressBar.setProgress(0);
             }
         });
