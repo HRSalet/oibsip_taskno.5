@@ -1,7 +1,0 @@
-<resources>
-    <string name="app_name">Stopwatch</string>
-    <string name="Start">Start</string>
-    <string name="Stop">Stop</string>
-    <string name="Hold">Hold</string>
-    <string name="Reset">Reset</string>
-</resources>
