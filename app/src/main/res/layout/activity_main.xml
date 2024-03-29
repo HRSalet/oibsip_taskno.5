@@ -34,7 +34,6 @@
             style="@style/Widget.AppCompat.ProgressBar.Horizontal"
             android:background="@drawable/gray_progressbar_background"
             android:progressDrawable="@drawable/blue_progressbar_background">
-
         </ProgressBar>
     </FrameLayout>
 
